@@ -1,25 +1,21 @@
 import PropTypes from 'prop-types';
+import CardMovies from './CardMovie';
 
-export function ListOfMovies ({ movies }) {
+export function ListOfMovies({ movies }) {
     return (
-        <ul className='movies'>
-            {
-                movies.map(movie => (
-                    <li key={movie.id}>
-                        <h3>{movie.title}</h3>
-                        <p>{movie.year}</p>
-                        <img src={movie.poster} alt={movie.title} />
-                    </li>
-                ))
-            }
-        </ul>
-    )
-}
+      <div className='movies'>
+        {movies.map((movie) => (
+          <CardMovies key={movie.id} movie={movie} />
+        ))}
+      </div>
+    );
+  }
+  
+  ListOfMovies.propTypes = {
+    movies: PropTypes.array.isRequired,
+  };
 
-ListOfMovies.propTypes = {
-  movies: PropTypes.array.isRequired,
-};
-
+  
 export function NoMoviesResults () {
     return (
         <p>No se encontraron películas en esta búsqueda</p>
