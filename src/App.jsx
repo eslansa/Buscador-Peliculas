@@ -102,16 +102,13 @@ function App() {
           {loading ? (
             <p>Cargando...</p>
           ) : (
-            <Grid
-              container
-              spacing={2}
-              justifyContent="center"
-            >
-              {movies.map((movie, index) => (
-                <Grid item key={index}>
-                  <CardMovies movie={movie} />
-                </Grid>
-              ))}
+            <Grid container spacing={2} justifyContent="center">
+              {movies &&
+                movies.map((movie, index) => (
+                  <Grid item key={index}>
+                    <CardMovies movie={movie} />
+                  </Grid>
+                ))}
             </Grid>
           )}
         </main>
