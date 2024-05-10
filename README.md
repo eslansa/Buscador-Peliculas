@@ -13,7 +13,7 @@ Integrantes:
   
   -Eslan Sanchez
 
-Web: buscador-peliculas.pages.dev
+Web: [Buscador-Peliculas](https://buscador-peliculas.pages.dev/)
 
 
 Pasos para instalar el proyecto:
@@ -29,3 +29,7 @@ npm i
 Iniciar el proyecto con:
 
 npm run dev
+
+Tecnologias:
+
+HTML CSS JavaScript React Material UI
