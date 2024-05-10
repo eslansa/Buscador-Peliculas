@@ -17,3 +17,15 @@ Web: buscador-peliculas.pages.dev
 
 
 Pasos para instalar el proyecto:
+
+1-Ir a la terminal de git:
+
+git clone https://github.com/eslansa/Buscador-Peliculas.git
+
+Abrir en el VSCode la terminal e instalar las dependencias del proyecto:
+
+npm i
+
+Iniciar el proyecto con:
+
+npm run dev
